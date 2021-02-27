@@ -136,3 +136,11 @@ s는 길이 4 이상, 20이하인 문자열입니다.
 |  "027778888"  |   "**\***8888"   |
 
 ---
+
+## dateConvert
+
+### 문제
+
+format from M/D/YYYY to YYYYMMDD
+
+---
