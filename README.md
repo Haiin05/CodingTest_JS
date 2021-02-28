@@ -144,3 +144,27 @@ s는 길이 4 이상, 20이하인 문자열입니다.
 format from M/D/YYYY to YYYYMMDD
 
 ---
+
+## checkDigit
+
+### 문제
+
+자리수의 모든 숫자를 더해서 한 자리 숫자가 나올때 까지 더하기
+
+---
+
+## throwError
+
+### 문제
+
+throw 사용해서 error 만들기
+
+---
+
+## removeObj
+
+### 문제
+
+객체안에 property 가 있는지 확인 후 있으면 제거
+
+---
