@@ -55,10 +55,10 @@ console.log(aaa); //false
 // ++(전위증가)
 // (후위증가)++
 
-var a = 10;
-var b = a++ + 5;
+let a = 10;
+let b = a++ + 5;
 console.log(a, b); // a = 11, b = 15가 출력됨
 
-var a = 10;
-var b = ++a + 5;
+let a = 10;
+let b = ++a + 5;
 console.log(a, b); // a = 11, b = 16이 출력됨
