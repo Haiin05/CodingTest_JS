@@ -62,3 +62,13 @@ console.log(a, b); // a = 11, b = 15가 출력됨
 let a = 10;
 let b = ++a + 5;
 console.log(a, b); // a = 11, b = 16이 출력됨
+
+/*-------- 내림차순 오름차순 ---------*/
+// 오름차순
+arr1.sort((a, b) => {
+  return a - b;
+});
+// 내림차순
+arr1.sort((a, b) => {
+  return b - a;
+});

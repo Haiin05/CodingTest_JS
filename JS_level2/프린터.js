@@ -4,7 +4,7 @@ function solution(priorities, location) {
   while (priorities.length > 0) {
     if (priorities.some((x) => x > priorities[0])) {
       priorities.push(priorities[0]);
-      priorities.shift(0);
+      priorities.shift();
 
       if (result === 0) {
         result += priorities.length - 1;
