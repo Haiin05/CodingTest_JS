@@ -72,3 +72,45 @@ arr1.sort((a, b) => {
 arr1.sort((a, b) => {
   return b - a;
 });
+// 사전순으로 정렬
+// a.localeCompare(b) 형태로 쓰면 사전순으로 정렬
+function solution(strings, n) {
+  return strings.sort((p, c) =>
+    p[n] === c[n] ? p.localeCompare(c) : p[n].localeCompare(c[n])
+  );
+}
+solution(["abce", "abcd", "cdx"], 1); // [ 'abcd', 'abce', 'cdx' ]
+
+/*-------- 재귀함수 ---------*/
+// 어떤 함수 안에서 자기자신을 다시 호출하는 함수
+// 장점 - 코드가 DRY(Do not Repeat Yourself)해지고, Readability(가독성)가 올라간다.
+// 단점 - 콜 스택을 많이 차지하는 단점도 존재.
+// 그럼에도 재귀 함수는 얼마나 많은 반복이 필요할지 모를 경우, 또는 tree 자료 구조나 노드 사이를 traversing하는 작업이 필요할 경우에는 일반적인 반복문보다 훨씬 효율적인 해결책이 된다.
+
+const countDown = (num) => {
+  console.log(num);
+  num--;
+  if (num <= 0) {
+    return false;
+  }
+  countDown(num);
+};
+
+countDown(5); // 5 4 3 2 1
+
+// 사용 예시 재귀 - factorial
+function factorial1(number) {
+  if (number <= 2) return number;
+
+  return factorial1(number - 1) * number;
+}
+// while - factorial
+function factorial2(number) {
+  let i = 1;
+  let answer = 1;
+  while (i <= number) {
+    answer = answer * i;
+    i++;
+  }
+  return answer;
+}
