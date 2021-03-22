@@ -311,6 +311,14 @@ str은 길이 1 이상인 문자열입니다.
 
 ---
 
+## 모의고사
+
+### 문제
+
+[프로그래머스 가서 보기](https://programmers.co.kr/learn/courses/30/lessons/42840)
+
+---
+
 # JavaScript level 2
 
 ## 기능개발 - 스택/큐
